@@ -1,5 +1,6 @@
 // components/RandomText.tsx
 import React from "react";
+import Link from "next/link";
 
 // Функція для генерації випадкових слів
 const generateRandomText = (wordCount: number): string => {
@@ -24,15 +25,15 @@ const generateRandomText = (wordCount: number): string => {
   return result;
 };
 
-const RandomText: React.FC = () => {
+const Psychosomatics: React.FC = () => {
   const randomText = generateRandomText(400); // Генеруємо 400 слів
 
   return (
     <div>
-      <h2>Random Text Component</h2>
+      <Link href="/">Random Text Component</Link>
       <p>{randomText}</p>
     </div>
   );
 };
 
-export default RandomText;
+export default Psychosomatics;
