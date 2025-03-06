@@ -2,18 +2,18 @@ import React from 'react';
 import Link from "next/link";
 
 
-const PsychosomaticsNavigation: React.FC = () => {
+const StructuralNavigation: React.FC = () => {
   
 
  
   return (
     <nav className='flex p-3 text-[#1186df]'>
         <ul className='flex gap-2 ml-auto mr-auto'>
-            <li className='p-4 border-2 border-[#45afff] hover:border-[#0091ff] rounded-lg'><Link href="/" className="hover:underline">
-            Мередіани
+            <li className='p-4 border-2 border-[#45afff] hover:border-[#0091ff] rounded-lg'><Link href="/structural/muscles" className="hover:underline">
+            М`язи 
               </Link></li>
             <li className='p-4 border-2 border-[#45afff] hover:border-[#0091ff] rounded-lg'><Link href="/psychosomatics/emotion" className="hover:underline">
-            Емоції
+            Внутрішні органи
               </Link></li>
             <li className='p-4 border-2 border-[#45afff] hover:border-[#0491ff] rounded-lg'><Link href="/psychosomatics" className="hover:underline">
             Точки лoкалізації
@@ -23,4 +23,4 @@ const PsychosomaticsNavigation: React.FC = () => {
   );
 };
 
-export default PsychosomaticsNavigation;
+export default StructuralNavigation;

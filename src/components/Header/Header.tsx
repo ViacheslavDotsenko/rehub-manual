@@ -7,7 +7,7 @@ const Header: React.FC = () => {
     <header className="bg-[linear-gradient(120deg,#1c1aa2_0%,#08c1e7_100%)] text-white p-6 shadow-md">
       <div className="container mx-auto flex flex-wrap justify-between items-center gap-4 text-center">
         
-        <h1 className="text-xl font-bold ">
+        <h1 className="text-xl font-bold hover:text-green-200">
           <Link href="/">MainPage</Link>
         </h1>        
         <nav>
