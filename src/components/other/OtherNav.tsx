@@ -2,7 +2,7 @@ import React from 'react';
 import Link from "next/link";
 
 
-const StructuralNavigation: React.FC = () => {
+const OtherNav: React.FC = () => {
   
 
  
@@ -13,7 +13,7 @@ const StructuralNavigation: React.FC = () => {
             <Link href="/">&#8656; Назад на головну</Link>
           </li>
             <li className='p-4 border-2 border-[#45afff] hover:border-[#0091ff] rounded-lg'><Link href="/structural/muscles" className="hover:underline">
-            М`язи 
+            Нейролімфатичні Рефлекси 
               </Link></li>
             <li className='p-4 border-2 border-[#45afff] hover:border-[#0091ff] rounded-lg'><Link href="/psychosomatics/emotion" className="hover:underline">
             Внутрішні органи
@@ -26,4 +26,4 @@ const StructuralNavigation: React.FC = () => {
   );
 };
 
-export default StructuralNavigation;
+export default OtherNav;

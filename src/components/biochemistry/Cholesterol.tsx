@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 
 
 
@@ -8,8 +8,10 @@ import React from "react";
 const Cholesterol: React.FC = () => {
  
     return (
-        <article className="flex-1 p-2 max-w-7xl mr-auto ml-auto">
-    <h2 className="text-[30px]">Холестерин</h2>
+        <article className="flex-1 flex p-2 max-w-7xl mr-auto ml-auto">
+          
+          <div className="flex-1 pr-[2rem]">
+          <h2 className="text-[30px]">Холестерин</h2>
     <p>Холестерин є ліпофільною молекулою, яка має важливу роль у структурі клітинних мембран, зокрема підтримуючи їх стабільність і текучість. Він є попередником для синтезу різних біологічно активних сполук, таких як стероїдні гормони, жовчні кислоти та вітамін D. Холестерин синтезується в організмі в основному в печінці, хоча також є джерелом для синтезу з ацетату через метаболічний шлях, відомий як шлях мевалонату.</p>
   
     <h2>Функції холестерину</h2>
@@ -50,7 +52,39 @@ const Cholesterol: React.FC = () => {
   
     <h2>Клінічні рекомендації</h2>
     <p>Регулярний моніторинг рівня холестерину є необхідним для оцінки ризику розвитку серцево-судинних захворювань, особливо у пацієнтів з факторами ризику, такими як артеріальна гіпертензія, цукровий діабет, куріння або родинна історія серцево-судинних захворювань. Пацієнтам з високим рівнем холестерину слід рекомендувати зміни в способі життя, а за необхідності — медикаментозне лікування для досягнення цільових рівнів холестерину.</p>
-  
+    <h2>Біосинтез холестирину</h2>
+  </div>
+    <aside className="flex relative justify-around  flex-col w-[320px] ">
+      <Image
+      src="/images/biochemistry/cholesterol_Heart.jpg"
+      alt="pictureHeart"
+      width={320}
+      height={210}
+      className="object-contain"
+      />
+      <Image
+      src="/images/biochemistry/cholesterolHeart1.avif"
+      alt="pictureHeart"
+      width={320}
+      height={210}
+      className="object-contain"
+      />
+      <Image
+      src="/images/biochemistry/goodFoods.jpg"
+      alt="pictureHeart"
+      width={320}
+      height={250}
+      className="object-contain"
+      />
+      <Image
+      src="/images/biochemistry/goodFood.jpg"
+      alt="pictureHeart"
+      width={320}
+      height={210}
+      className="object-contain"
+      />
+
+    </aside>
   </article>
         
     );
